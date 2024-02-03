@@ -4,14 +4,21 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Notifications from "./Notifications";
 
-ReactDOM.render(
+
+const rootNotifications = ReactDOM.createRoot(document.getElementById("root-notifications"));
+rootNotifications.render(
   <React.StrictMode>
-    <div className="root-notifications">
-      <Notifications />
-    </div>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <Notifications />
+  </React.StrictMode>
 );
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+
 
 reportWebVitals();
