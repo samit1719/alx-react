@@ -20,7 +20,7 @@ function App() {
         </form>
       </div>
       <div className="App-footer">
-        Copyriht {getFullYear()} - {getFooterCopy()}
+        Copyright {getFullYear()} - {getFooterCopy()}
       </div>
     </div>
   );
